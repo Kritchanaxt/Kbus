@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif
+}
+body{
+    background: linear-gradient(0deg, rgba(10, 209, 159, 0.3) 0%, rgba(1, 255, 57, 0.3) 44.79%, rgba(0, 255, 56, 0) 100%);
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+}
+
+#navb {
+    display: flex;
+    flex-direction: flex;
+    text-align: center;
+    position: relative;
+    justify-content: space-around;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 2;
+}
+#navb.scroll {
+    background-color: #ffffff; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+  
+.navblogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.navtext{
+    justify-content: center;
+    display: flex;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    align-items:center;
+    margin:0 20px;
+    font-weight: bold;
+    /* 3D VIEW */
+    color: rgba(1, 1, 77, 0.8);
+}
+#dropdown{
+    margin-left: 10px;
+}
+.Lang.navtext{
+    border-radius: 40px;
+    border: 2px solid green;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#langdrop{
+    display: inline-block;
+    flex-direction: column;
+    height: 53.6px;
+    background-color: transparent;
+    border: transparent;
+    margin: 0 10px;
+    align-items: center;
+}
+.langbg{
+    /*dropdown*/
+    display: none; /* <== เปลี่ยนเป็น none แต่อยากให้มัน click ได้อะ แต่ทำไม่เป็น :) */
+    flex-direction:column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0px 0px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+/*#langdrop:hover .langbg{
+    display: block;
+    
+}*/
+.thailang{
+    margin: 0px 0px;
+    padding: 8px 0px;
+}
+.englang{
+    margin: 0px 0px;
+    padding: 8px 0px;
+}
+.thailang:hover{
+    background-color: #0AD19F;
+    border-radius: 12px;
+    color: white;
+}
+.englang:hover{
+    background-color: #0AD19F;
+    border-radius: 12px;
+    color: white;
+}
+
+/* MeiaMeia MeiaMeiaMeiaMeia
+@media only screen and (min-width: 760px) {
+    .Lang.navtext{
+        color: wheat;
+    }
+}
+*/
+
+/* และแล้วก็มาถึงตัว Body ตัวแรกที่เรากำลังจะทำ แงง*/
+#bdone{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.busleft{
+    display: flex;
+    background-color: #03034D;
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    /*width: fit-content;
+    height: fit-content;*/
+    width: 202px;
+    height: 186px;
+    justify-content: center;
+    align-items: center;
+}
+.oslogo{
+    display: flex;
+    flex-direction: row;
+    
+    padding: 5px 0x;
+}
+.logoios{
+    margin: 5px;
+    border-radius: 30px;
+    background-color:white;
+    padding: 10px 25px;
+}
+
+.logoandroid{
+    margin: 5px;
+    border-radius: 30px;
+    background-color:white;
+    padding: 10px 25px;
+}
+
+#bdone{
+    margin: 100px 0 0 0;
+    padding: 0;
+}
+.bustext{
+    margin-top: 40px;
+    font-family: 'Inter', sans-serif;
+}
+.busfrist{
+    font-size: 44.75px;
+    font-weight: 700;
+    color: rgba(3, 3, 77, 0.8);;
+}
+.bussecond{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(3, 3, 77, 0.5);;
+}
+.oslogo{
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.logoios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22.3762px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #0AD19F;
+}
+.logoandroid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22.3762px;
+    box-shadow: 0px 4px 4px #0AD19F;
+}
+.playstore{
+    width: 35px;
+}
+/*ฝั่งขวาาาา*/
+
+
+#bdoright{
+    display: flex;
+    align-items: center;
+}
+.busbig{
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    width: 800px; 
+}
+/*-------------------- bodyweb 2 ฮอยย้ะ ------------------------*/
+#About {
+    padding: 550px 0;
+    width: 100%;
+    height: 1280px;
+}
+
+#About div h1 {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    color: rgba(3, 3, 77, 0.80);
+    font-size: 50px;
+}
+
+.about-list {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 20px;
+}
+
+.about-list div {
+    display: block;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center; 
+    position: relative;
+    margin-left: 30px;
+    color: rgba(3, 3, 77, 0.80);
+  }
+
+.Routes img {
+    align-items: center;
+    margin-left: 100px;
+    width: 380px;
+    height: 484px;
+    margin-top: -60px;
+}
+
+.Routes h2  {
+    margin-top: -100px;
+    margin-left: 110px;
+    font-size: 38px;
+}
+
+.Routes h4 {
+    margin-left: 117px;
+    margin-top: 20px;
+    font-size: 24px;
+    color: rgba(3, 3, 77, 0.50);
+}
+
+.Routes p  {
+    margin-left: 185px;
+    margin-top: 5px;
+    font-size: 24px;
+    color: rgba(3, 3, 77, 0.50);
+}
+
+.TrackLive img {
+    align-items: center;
+    width: 374px;
+    height: 374px;
+    margin-left: 60px;
+}
+
+.TrackLive h2 {
+    margin-top: -50px;
+    font-size: 38px;
+    margin-left: 100px;
+}
+
+.TrackLive h4 {
+    margin-left: 97px;
+    margin-top: 20px;
+    font-size: 24px;
+    color: rgba(3, 3, 77, 0.50);
+}
+
+.TrackLive p  {
+    margin-left: 127px;
+    margin-top: 5px;
+    font-size: 24px;
+    color: rgba(3, 3, 77, 0.50);
+}
+
+.GetDirections img {
+    align-items: center;
+    margin-right: 60px;
+    width: 360px;
+    height: 380px;
+}
+
+.GetDirections h2 {
+    margin-top: -55px;
+    margin-left: 45px;
+    font-size: 38px;
+}
+.GetDirections h4 {
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 24px;
+    color: rgba(3, 3, 77, 0.50);
+}
+
+.GetDirections p  {
+    margin-left: 75px;
+    margin-top: 5px;
+    font-size: 24px;
+    color: rgba(3, 3, 77, 0.50);
+}
+
+/*-------------------- bodyweb 3  ------------------------*/
+#View3D {
+    padding:500px 0;
+    width: 100%;
+    height: 1024px;
+    background: linear-gradient(180deg, rgba(1, 255, 57, 0.30) 0%, rgba(10, 209, 159, 0.30) 50%, rgba(1, 255, 57, 0.00) 100%);
+}
+
+#View3D div h1 {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    color: rgba(3, 3, 77, 0.80);
+    font-size: 50px;
+}
+
+
+/*Media for ipad*/
+@media only screen and (max-width:600px){
+    body{
+        height: 1090px;
+
+    }
+    #navb{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0;
+    }
+    .navtext{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .DV.navtext{
+        margin-right: 0px;
+    }
+    .Contact.navtext{
+        margin-right: 0px;
+    }
+    .navblogo{
+        display: flex;
+        background-color: blue;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        float: right;
+        margin-left: 95px;
+    }
+    #navlogo{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 0 0;
+        justify-content: center;
+        margin-right: 30px;
+        align-items: center;
+        
+    }
+    #bdone{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px; /*ขนาด bodytwo*/
+    }
+    .Contact.navtext{
+        margin-top: 10px;
+    }
+    .Lang.navtext{
+        display: flex;
+        flex-direction: row;
+    }
+    #langdrop{
+        margin-top: 10px;
+        display: flex;
+    }
+    /*body แรก*/
+    #bdone{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #bdoleft{
+        display: flex;
+        flex-direction: column;
+    }
+    .langbg{
+        padding: 0 0px;
+    }
+    .thailang{
+        margin: 0px 0px;
+        padding: 8px 40px;
+    }
+    .englang{
+        margin: 0px 0px;
+        padding: 8px 0px;
+    }
+    .oslogo{
+        display: flex;
+        flex-direction: column;
+    }
+    .logoios:hover{
+        background-color: #0AD19F;
+        color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .logoandroid:hover{
+        background-color: #0AD19F;
+        color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+}
+.logoios:hover{
+    background-color: #0AD19F;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.logoandroid:hover{
+    background-color: #0AD19F;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
