@@ -156,7 +156,8 @@ nav {
 }
 
 .button img {
-
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
