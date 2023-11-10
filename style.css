@@ -37,7 +37,7 @@ nav {
     width: 100%;
     padding: 1px 100px;
     display: flex;
-    background-color: #fff;
+    background-color: transparent;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -46,7 +46,7 @@ nav {
 .Section a {
     font-weight: 700;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 26px;
     color: rgba(2, 2, 115, 0.80);
     margin-left: 40px;
 }
@@ -56,7 +56,7 @@ nav {
     text-align: center;
     font-weight: 700;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 26px;
     color: rgba(2, 2, 115, 0.80);
 }
 
@@ -78,13 +78,14 @@ nav {
 }
 
 .dropdown-menu {
-    display: none;
+    display: block;
     position: absolute;
     background-color: #fff;
     min-width: 200px;
-    box-shadow: 0px 2px 4px 0px #6FFBA0;
+    box-shadow:  0px 2px 4px 0px #6FFBA0;
     z-index: 2;
-    margin-top: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
 .dropdown-item1 {
@@ -92,7 +93,7 @@ nav {
     text-decoration: none;
     color: rgba(2, 2, 115, 0.80);
     display: block;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 .dropdown-item2 {
@@ -100,17 +101,19 @@ nav {
     text-decoration: none;
     color: rgba(2, 2, 115, 0.80);
     display: block;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 .dropdown-item1:hover {
     background-color: #0AD19F;
+    color: #fff;
     border-top-right-radius:10px;
     border-top-left-radius: 10px;
 }
 
 .dropdown-item2:hover {
     background-color: #0AD19F;
+    color: #fff;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -138,26 +141,62 @@ nav {
     margin-top: 20px;
 }
 
-.button  {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,0.1fr));
-    row-gap: 50px;
-}
-
-.button p  {
-    width: 150px;
-    height: 70px;
-    border-radius: 26px;
-    background: #FFF;
-    box-shadow: 0px 15px 30px 0px rgba(10, 209, 159, 0.80);
-    font-size: 20px;
-    right: 150px;
-}
-
-.button img {
-    text-decoration: none;
+.Logo {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px;
     cursor: pointer;
+}
+
+.Logo a {
+    color: rgba(2, 2, 115, 0.80);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.ios {
+    margin: 5px 0px;
+    border-radius: 30px;
+    background-color:white;
+    padding: 10px 25px;
+    box-shadow: 0px 10px 20px 0px rgba(10, 209, 159, 0.80);
+}
+
+.ios img {
+    width: 45px;
+    height: 45px;
+}
+
+.ios:hover {
+    box-shadow: 0px 15px 30px 0px rgba(10, 209, 159, 0.80);
+    filter: brightness(1.2);
+}
+
+.android {
+    margin: 5px 20px;
+    border-radius: 30px;
+    background-color:white;
+    padding: 10px 30px;
+    box-shadow: 0px 10px 20px 0px rgba(10, 209, 159, 0.80);
+}
+
+.android img {
+    width: 40px;
+    height: 40px;
+}
+
+.android:hover {
+    box-shadow: 0px 15px 30px 0px rgba(10, 209, 159, 0.80);
+    filter: brightness(1.2);
+}
+
+.bus-1 img {
+    width: 1200px;
+    height: 800px;
+    margin-top: -37rem;
+    margin-left: 13rem;
+
 }
 
 
