@@ -15,7 +15,7 @@ body {
     width: 100%;
     height: 1060px;
     flex-shrink: 0;
-    background: linear-gradient(0deg, #0AD19F 0%, #01FF98 20.83%, rgba(1, 255, 57, 0.00) 92.71%);
+    background: linear-gradient(0deg, #0AD19F 1%, #01FF98 20.83%, rgba(1, 255, 57, 0.01) 96%);
     background-repeat: no-repeat;  
 }
 
@@ -26,9 +26,8 @@ body {
 .logo {
     width: 200px;
     height: 100px;
-    flex-shrink: 0;
 }
-/*  Navbar */
+/*  Navbar!? */
 nav {
     position: fixed;
     top: 0;
@@ -42,12 +41,22 @@ nav {
     z-index: 100;
 }
 
+.transparent {
+    transition: background-color 0.5s ease; 
+}
+
+.solid {
+    background-color: #fff; 
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
 .Section a {
     text-decoration: none;
     font-size: 26px;
     color: rgba(2, 2, 115, 0.80);
-    margin-left: 40px;
+    margin-left: 40px;    
 }
+
 
 .languageSection  {
     display: inline-block;
@@ -67,22 +76,27 @@ nav {
     margin-left: 40px;
 }
 
-/* the dropdown  */
+/* The dropdown!?  */
 .nav-link.dropdown-toggle {
     color: rgba(2, 2, 115, 0.80);
     text-decoration: none;
     display: block;
 }
 
-.dropdown-menu {
+.dropdown-menu  {
     display: block;
     position: absolute;
     background-color: #fff;
     min-width: 200px;
     box-shadow:  0px 2px 4px 0px #6FFBA0;
     z-index: 2;
-    margin-top: 15px;
-    border-radius: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.dropdown-menu a {
+   display: block;
+   margin-left: 0px;
 }
 
 .dropdown-item1 {
@@ -104,31 +118,32 @@ nav {
 .dropdown-item1:hover {
     background-color: #0AD19F;
     color: #fff;
-    border-top-right-radius:20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius:15px;
+    border-top-left-radius: 15px;
 }
 
 .dropdown-item2:hover {
     background-color: #0AD19F;
     color: #fff;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 
 .languageSection:hover .dropdown-menu {
     display: block;
     padding: 20px, 10px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
-/* Header text */
+/* Header text!? */
 .header-text {
-    margin-top: 20%;
+    margin-top: 22%;
     font-size: 30px;
 }
 
 .header-text h1 {
+    margin-top: 20px;
     font-size: 45px;
     color: rgba(2, 2, 115, 0.80);
 }
@@ -141,47 +156,56 @@ nav {
 
 .Logo {
     margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    padding: 5px 0px;
     cursor: pointer;
+    display: flex;
 }
 
 .Logo a {
     color: rgba(2, 2, 115, 0.80);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
+    margin-left: 20px;
 }
 
 .ios {
     margin: 5px 0px;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     background-color:white;
-    padding: 10px 25px;
+    display: flex;
+    padding: 15px 25px;
     box-shadow: 0px 10px 20px 0px rgba(10, 209, 159, 0.80);
 }
 
 .ios img {
     width: 45px;
     height: 45px;
-}
-
-.ios:hover {
-    box-shadow: 0px 15px 30px 0px rgba(10, 209, 159, 0.80);
-    filter: brightness(1.2);
+    margin-top: -5px;
+    display: block;
 }
 
 .android {
     margin: 5px 20px;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     background-color:white;
-    padding: 10px 30px;
+    padding: 15px 25px;
+    display: flex;
     box-shadow: 0px 10px 20px 0px rgba(10, 209, 159, 0.80);
 }
 
 .android img {
     width: 40px;
     height: 40px;
+    display: block;
+    margin-left: 10px; 
+}
+
+.ios:hover {
+    box-shadow: 0px 15px 30px 0px rgba(10, 209, 159, 0.80);
+    filter: brightness(1.2);
 }
 
 .android:hover {
@@ -194,7 +218,19 @@ nav {
     height: 800px;
     margin-top: -37rem;
     margin-left: 13rem;
+    animation: bounce 2s ease infinite;
+}
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* ไม่มีการเปลี่ยนแปลงในทิศทางแนวตั้ง */
+    }
+    40% {
+        transform: translateY(-20px); /* เขย่าขึ้น 20px */
+    }
+    60% {
+        transform: translateY(-10px); /* เขย่าขึ้น 10px */
+    }
 }
 
 
