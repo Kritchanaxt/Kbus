@@ -356,3 +356,44 @@ p {
 
 
 /*Media for ipad*/
+
+/*-------------Page 4 !! ----------------*/
+#Transit{
+    position: absolute;
+    height: 1060px;
+    width: 100%;
+    background: linear-gradient(180deg, #0AD19F 0%, #6E7CF1 100%);
+}
+.Transitlayer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Transleft{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.Transtitle{
+    font-weight: bold;
+    margin-top: 60px;
+    color: white;
+    font-size: 50px;
+}
+.TransScription{
+    font-weight: lighter;
+    font-size: 15px;
+    color: white;
+}
+.Transbottom{
+    background-color: rgb(253, 86, 86);
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
+}
