@@ -221,7 +221,7 @@ nav {
     height: 510px;
     margin-top: -27rem;
     margin-left: 17rem;
-    /*animation: slideinup 3s ease-in-out 1s forwards;*/
+    animation: slideinup 3s ease-in-out 1s forwards;
 }
 
 /*--------------- Keyframes--------------*/
@@ -341,7 +341,7 @@ p {
 
 /*-------------------- Page3 !!------------------------*/
 #Page3 {
-    padding:400px 0;
+    padding:500px 0;
     width: 100%;
     height: 1060px;
     background: linear-gradient(180deg, #0AD19F 0%, #34E39F 16.15%, #01FF98 39.58%, #6FFBA0 67.71%, rgba(1, 255, 57, 0.00) 100%);
@@ -350,32 +350,45 @@ p {
 .bus-2 {
     width: 1180px;
     height: 985px;
-    margin-top: -25rem;
+    margin-top: -30rem;
     margin-left: -10.5rem;
 }
 
 .sub-titleVeiw {
-    margin-top: -55%;
+    margin-top: -48rem;
     margin-left: 55%;
 }
 
-.sub-title3D {
-    display: flex;
+.sub-title3D  {
     color: rgba(2, 2, 115, 0.80);
-    font-size: 50px;
+    font-size: 64px;
+    margin-left: -10rem;
 }
 
 .sub-titleVeiw h3 {
     margin-top: 10%;
+    font-size: 32px;
+    color: rgba(2, 2, 115, 0.60);
 }
 
 .OPEN3D {
-    margin-top: 20%;
-    margin-left: 55%;
+    margin-top: 5rem;
+    margin-left: 60%;
+    font-size: 30px;
 }
 
+.OPEN3D a {
+    border-radius: 45px;
+    border: 2px solid #0AD19F;
+    background: rgba(1, 255, 57, 0.02);
+    box-shadow: 0px 0px 10px 0px #01FF98;
+    margin: 0px 0px;
+    justify-content: center;
+    padding: 15px 25px;
+    color: rgba(2, 2, 115, 0.80);
+    text-decoration: none;
+}
 
-/*Media for ipad*/
 
 /*-------------Page 4 !! ----------------*/
 #Transit{
