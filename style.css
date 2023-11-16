@@ -88,7 +88,8 @@ nav {
     position: absolute;
     background-color: #fff;
     min-width: 200px;
-    box-shadow:  0px 2px 4px 0px #6FFBA0;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px 0px #6FFBA0;
     z-index: 2;
     margin-top: 10px;
     border-radius: 15px;
@@ -224,38 +225,8 @@ nav {
     animation: slideinup 3s ease-in-out 1s forwards;
 }
 
-/*--------------- Keyframes--------------*/
-
-/* Keyframes สำหรับการเคลื่อนที่จากล่างขึ้นบน */
-@keyframes slideinup {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
-/* Keyframes สำหรับการเคลื่อนที่จากบนลงล่าง */
-@keyframes slideindown {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
-/* Keyframes สำหรับการเคลื่อนที่จากซ้ายไปทางขวา */
-@keyframes slideinleft {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+.bus-1:hover {
+    transform: translateY(-20px);
 }
 
 /*-------------------- Page2 !! ------------------------*/
@@ -335,7 +306,7 @@ p {
 }
 
 .about-list img:hover {
-    transform: translateY(-10px);
+    animation: beat 1s infinite;
 }
 
 
@@ -354,7 +325,7 @@ p {
     margin-left: -10.5rem;
 }
 
-.sub-titleVeiw {
+.Veiw3D {
     margin-top: -48rem;
     margin-left: 55%;
 }
@@ -365,30 +336,44 @@ p {
     margin-left: -10rem;
 }
 
-.sub-titleVeiw h3 {
-    margin-top: 10%;
+.Veiw3D h3 {
+    margin-top: 8%;
     font-size: 32px;
     color: rgba(2, 2, 115, 0.60);
 }
 
-.OPEN3D {
+.Open3D {
     margin-top: 5rem;
     margin-left: 60%;
     font-size: 30px;
+    cursor: pointer;
+    display: flex;
 }
 
-.OPEN3D a {
+.sub-titleOpen {
     border-radius: 45px;
     border: 2px solid #0AD19F;
     background: rgba(1, 255, 57, 0.02);
     box-shadow: 0px 0px 10px 0px #01FF98;
-    margin: 0px 0px;
-    justify-content: center;
-    padding: 15px 25px;
+    padding: 25px 30px;
     color: rgba(2, 2, 115, 0.80);
-    text-decoration: none;
+    margin: 5px 0px;
 }
 
+.sub-titleOpen i {
+    margin: 5px 5px;
+}
+
+.sub-titleOpen a {
+    color: rgba(2, 2, 115, 0.80);
+    text-decoration: none;
+    margin: 5px 5px;
+}
+
+.sub-titleOpen:hover {
+    background: linear-gradient(180deg, #01FF98 3.12%, #6FFBA0 49.48%, #01FF98 100%);
+    transform: scale(1.1);
+}
 
 /*-------------Page 4 !! ----------------*/
 #Transit{
@@ -430,3 +415,49 @@ p {
     margin-top: 50px;
     cursor: pointer;
 }
+
+/*--------------- Keyframes--------------*/
+
+/* Keyframes สำหรับการเคลื่อนที่จากล่างขึ้นบน */
+@keyframes slideinup {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Keyframes สำหรับการเคลื่อนที่จากบนลงล่าง */
+@keyframes slideindown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Keyframes สำหรับการเคลื่อนที่จากซ้ายไปทางขวา */
+@keyframes slideinleft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes beat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
