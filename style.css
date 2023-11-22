@@ -118,6 +118,9 @@ nav {
     padding: 20px, 10px;
     border-radius: 15px;
 }
+@media screen {
+    
+}
 /* Header text!? */
 .header-text {
     margin-top: 25%;
