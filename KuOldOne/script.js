@@ -12,6 +12,7 @@ $(document).ready(function(){
         console.log('Selected language:', selectedLanguage);
     });
   });
+
   // Navbar transparent!!
   var nav = document.getElementById("navbar"); 
   // รับอิลิเมนต์ nav
@@ -24,6 +25,7 @@ $(document).ready(function(){
           nav.classList.remove("solid");
       }
   }
+  
   // ฟังก์ชันเพื่อเพิ่มหรือลบคลาส "solid" ขึ้นอยู่กับตำแหน่งการเลื่อน
   window.addEventListener("scroll", handleScroll);
   // ผูกฟังก์ชัน handleScroll กับเหตุการณ์การเลื่อน
