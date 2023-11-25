@@ -1,15 +1,15 @@
 // Dropdown!!
 $(document).ready(function(){
     // เมื่อคลิกที่ dropdown-toggle ใน languageSection
-    $('.languageSection .dropdown-toggle').click(function(){
+    $('.language-section .dropdown-toggle').click(function(){
         // สลับการแสดง/ซ่อน dropdown-menu
-        $('.languageSection .dropdown-menu').toggle();
+        $('.language-section .dropdown-menu').toggle();
     });
     // เมื่อคลิกที่องค์ประกอบ a1 ภายใน dropdown-menu ของ languageSection
-    $('.languageSection .dropdown-menu a1').click(function(){
+    $('.language-section .dropdown-menu a1').click(function(){
         // ดึงค่า attribute 'language' จากองค์ประกอบ a1 ที่ถูกคลิก
         var selectedLanguage = $(this).attr('language');
-        console.log('Selected language:', selectedLanguage);
+        console.log('selected language:', selectedLanguage);
     });
   });
 
@@ -29,4 +29,22 @@ $(document).ready(function(){
   // ฟังก์ชันเพื่อเพิ่มหรือลบคลาส "solid" ขึ้นอยู่กับตำแหน่งการเลื่อน
   window.addEventListener("scroll", handleScroll);
   // ผูกฟังก์ชัน handleScroll กับเหตุการณ์การเลื่อน
-  
+
+
+  var lastClickTime = 0;
+
+  document.querySelector('.language-section').addEventListener('click', function() {
+    var currentTime = new Date().getTime();
+
+    if (currentTime - lastClickTime > 5000) { // 5000 มีค่าเท่ากับ 5 วินาที
+      // ทำสิ่งที่คุณต้องการทำเมื่อคลิก
+      console.log("Button clicked!");
+
+      // อัปเดตเวลาล่าสุดที่คลิก
+      lastClickTime = currentTime;
+
+      // ทำอื่นๆ ที่คุณต้องการทำ
+    } else {
+      console.log("Please wait before clicking again.");
+    }
+  });

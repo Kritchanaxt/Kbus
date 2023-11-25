@@ -7,6 +7,7 @@
 body {
     width: 100%;
     height: 5299px;
+    overflow-x: hidden;
 }
 /*-------------------- header!!----------------------*/
 #header {
@@ -18,7 +19,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 .container {
     padding: 10px 10%;
@@ -48,20 +48,22 @@ nav {
     background-color: #fff; 
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
 }
-.Section a {
+.section a {
     text-decoration: none;
     font-size: 26px;
     color: rgba(2, 2, 115, 0.80);
     margin-left: 40px;    
 }
-.languageSection  {
+.language-section  {
     display: inline-block;
     text-align: center;
     text-decoration: none;
     font-size: 26px;
     color: rgba(2, 2, 115, 0.80);
+    cursor: pointer;
 }
-.languageSection p {
+
+.language-section p {
     display: inline-block;
     border-radius: 26px;
     border: 2px solid #01FF98;
@@ -76,8 +78,9 @@ nav {
     text-decoration: none;
     display: block;
 }
+
 .dropdown-menu  {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #fff;
     min-width: 200px;
@@ -117,7 +120,7 @@ nav {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-.languageSection:hover .dropdown-menu {
+.language-section:hover .dropdown-menu {
     display: block;
     padding: 20px, 10px;
     border-radius: 15px;
@@ -194,10 +197,9 @@ nav {
 }
 .bus-1 img {
     width: 980px;
-    height: 510px;
-    margin-top: -27rem;
-    margin-left: 17rem;
-    animation: slideinup 3s ease-in-out 1s forwards;
+    height: 520px;
+    margin-top: -26rem;
+    margin-left: 20rem;
 }
 .bus-1:hover {
     transform: translateY(-20px);
@@ -213,12 +215,14 @@ nav {
     justify-content: space-around;
     color: rgba(2, 2, 115, 0.80);
     font-size: 50px;
+    align-items: center; 
 }
 .about-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     grid-gap: 100px;
     margin-top: 50px;
+    align-items: center; 
 }
 .about-list div {
     display: block;
@@ -274,107 +278,90 @@ p {
     padding:500px 0;
     width: 100%;
     height: 1060px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background: linear-gradient(180deg, #0AD19F 0%, #34E39F 16.15%, #01FF98 39.58%, #6FFBA0 67.71%, rgba(1, 255, 57, 0.00) 100%);
-    justify-content: space-around;
 }
+
 .bus-2 {
-    width: 1180px;
-    height: 985px;
+    display: flex;
+    width: 1181px;
+    height: 983px;
     margin-top: -30rem;
-    margin-left: -10.5rem;
 }
-.Veiw3D {
-    margin-top: -48rem;
-    margin-left: 55%;
+
+.view3D {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 9rem;
+    margin-left: 5rem;
 }
+
 .sub-title3D  {
     color: rgba(2, 2, 115, 0.80);
     font-size: 64px;
-    margin-left: -10rem;
+    margin-left: -35rem;
+    margin-top: -25rem;
 }
-.Veiw3D h3 {
-    margin-top: 8%;
+
+.view3D h3 {
+    margin-top: 4rem;
+    margin-left: -26rem;
     font-size: 32px;
     color: rgba(2, 2, 115, 0.60);
 }
+
 .Open3D {
-    margin-top: 5rem;
-    margin-left: 60%;
+    margin-top: 15rem; 
     font-size: 30px;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(-28rem);
 }
+
 .sub-titleOpen {
     border-radius: 45px;
     border: 2px solid #0AD19F;
     background: rgba(1, 255, 57, 0.02);
     box-shadow: 0px 0px 10px 0px #01FF98;
-    padding: 25px 30px;
+    padding: 1.5rem 2rem;
     color: rgba(2, 2, 115, 0.80);
-    margin: 5px 0px;
+    margin: 5px 0;
+    text-align: center; 
 }
+
 .sub-titleOpen i {
-    margin: 5px 5px;
+    margin: 5px 0px;
+    font-size: 0.8em;
 }
+
 .sub-titleOpen a {
     color: rgba(2, 2, 115, 0.80);
     text-decoration: none;
     margin: 5px 5px;
 }
+
 .sub-titleOpen:hover {
     background: linear-gradient(180deg, #01FF98 3.12%, #6FFBA0 49.48%, #01FF98 100%);
     transform: scale(1.1);
 }
+
 /*-------------Page 4 !! ----------------*/
-#Transit{
-    position: absolute;
-    height: 1060px;
+#Page4 {
+    padding:200px 0;
     width: 100%;
-    background: linear-gradient(180deg, #0AD19F 0%, #6E7CF1 100%);
-}
-.Transitlayer{
+    height: 1060px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-.Transleft{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-}
-.Transtitle{
-    font-weight: bold;
-    margin-top: 60px;
-    color: white;
-    font-size: 50px;
-}
-.TransScription{
-    font-weight: lighter;
-    font-size: 15px;
-    color: white;
-}
-.Transbottom{
-    background-color: rgb(253, 86, 86);
-    height: 50px;
-    width: 200px;
-    border-radius: 25px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: white;
-    margin-top: 50px;
-    cursor: pointer;
+    background: linear-gradient(180deg, #0AD19F 0%, #6E7CF1 100%);
 }
 /*--------------- Keyframes--------------*/
-/* Keyframes สำหรับการเคลื่อนที่จากล่างขึ้นบน */
-@keyframes slideinup {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
+
 /* Keyframes สำหรับการเคลื่อนที่จากบนลงล่าง */
 @keyframes slideindown {
     0% {

@@ -382,7 +382,7 @@ body{
 }
 .threeopen{
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
