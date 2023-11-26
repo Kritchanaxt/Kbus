@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Inter', sans-serif;
+<<<<<<< HEAD:KUBUS /style.css
 }
 /*Navbar-Start*/
 #bgone{
@@ -685,4 +686,6 @@ body{
         flex-direction: column;
         text-align: left;
     }
+=======
+>>>>>>> cd811683cb980173d70839a537f10cb42136764b:KUBUS/style.css
 }

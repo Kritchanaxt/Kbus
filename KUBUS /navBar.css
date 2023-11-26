@@ -1,0 +1,138 @@
+/*Navbar-Start*/
+#bgone{
+    background: linear-gradient(0deg, #0AD19F 0%, #01FF98 20.83%, rgba(1, 255, 57, 0.01) 92.71%);
+    height: 850px;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    height: 70px;
+    box-shadow: 5px 4px 19px 11px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    margin-left: 40px;
+}
+.navbarlist{
+    display: flex;
+    margin: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+}
+.nav:hover{
+    color:rgb(84, 84, 84);
+    cursor: pointer;
+}
+.nav{
+    margin-right: 20px;
+    color: rgba(2, 2, 115, 0.8);
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/*Langugues */
+
+.langu{
+    display: flex;
+}
+
+.langu .content{
+    display: none;
+    margin-top: 20px;
+
+}
+.langu .content.langeng{
+    display: block;
+}
+.check{
+    position: relative;
+    width: 50px;
+    margin: 0 5px;
+    
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 25px;
+}
+.check:checked::before{
+    background-color: rgb(72, 214, 72);
+}
+.check:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked::after{
+    left: 20px;
+}
+.check:checked ~ .content.langeng{
+    display: none;
+}
+.check:checked ~ .content.langth{
+    display: block;
+}
+
+@media only screen and (max-width: 600px){
+/*    body{
+      background-color: blue;
+    } */
+    #header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 5px 4px 19px 11px rgba(0, 0, 0, 0.1);
+    }
+    .navbarlist{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        margin-top: 10px;
+        background-color: gray;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 150px;
+        padding-right: 150px;
+        
+    }
+    .navcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav:hover{
+        background-color:#01FF98;
+    }
+    .langu{
+        margin-top: 10px;
+    }
+    .logo{
+        margin-top: 15px;
+        margin-right: 50px;
+    }
+}

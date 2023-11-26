@@ -1,0 +1,164 @@
+/*Bottom bar*/
+#bdbottom{
+    background: #6E7CF1;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+}
+/*First bar*/
+.botfirst{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+}
+.logoapp{
+    display: flex;
+    flex-direction: row;
+}
+.playapp{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background: rgba(3, 3, 3, 0.4);
+    border: 1px solid #FFFFFF;
+    border-radius: 13.4257px;
+    padding: 7px 15px;
+    font-size: 14px;
+}
+.playtop{
+    font-size: 9px;
+}
+.appleapp{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(3, 3, 3, 0.4);
+    border: 1px solid #FFFFFF;
+    border-radius: 13.4257px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.appletop{
+    font-size: 9px;
+}
+/*Bar two*/
+.bottwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.bothome{
+    margin: 10px 0;
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+}
+.botsup{
+    margin: 50px 0;
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+}
+/*Bar three*/
+.botthree{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.botjoin{
+    margin: 10px 0;
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+}
+.botfqa{
+    margin: 50px 0;
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+}
+/*Bar four*/
+.botfour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+.botcontact{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.botlogo{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+    /*bottom bar*/
+    #bdbottom{
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+    /*first bar*/
+    .botfirst{
+        display: flex;
+        flex-direction: column
+    }
+    .logoapp{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .playapp{
+        margin: 5px 0;
+    }
+    /*Bar two*/
+    .bottwo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .bothome{
+        font-size: 15px;
+        margin: 0;
+        
+    }
+    .botsup{
+        font-size: 15px;
+        margin: 0;
+    }
+    /*Bar three*/
+    .botthree{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .botjoin{
+        font-size: 15px;
+        margin: 0;
+    }
+    .botfqa{
+        font-size: 15px;
+        margin: 0;
+    }
+    /*Bar four*/
+    .botfour{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+}
