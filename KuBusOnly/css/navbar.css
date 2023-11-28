@@ -134,7 +134,7 @@
     border-radius: 15px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 940px){
 
     #navbar {
         display: flex;
@@ -158,18 +158,23 @@
         display: flex;
         position: absolute;
         right: 1rem;
+        cursor: pointer;
     }
     #logoNavClose{
         display: none;
         position: absolute;
         right: 1rem;
+        cursor: pointer;
     }
     .section{
-        display: none;
+        display: flex; /*none*/
         flex-direction: column;
-        right:0;
+        top: 150%;
+        align-items: center;
+        z-index: -1;
+        position: absolute;
+        left: 0;
         /*margin-right: 40px;*/
 
     }
 }
-

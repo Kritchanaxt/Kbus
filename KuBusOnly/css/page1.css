@@ -81,9 +81,11 @@
 
 .bus-1 img {
     width: 980px;
+    max-width: 100%;
     height: 520px;
     margin-top: -26rem;
-    margin-left: 20rem;
+    margin-left: 23rem;
+    
 }
 
 .bus-1:hover {
@@ -128,6 +130,7 @@
         margin:0;
         align-items: center;
         text-align: center;
+        max-width: 500px;
         
     }
 }

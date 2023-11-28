@@ -32,6 +32,7 @@ $(document).ready(function(){
 
 
 
+  /*
   var section = document.getElementById("section");
 
   function openmenu(){
@@ -40,6 +41,24 @@ $(document).ready(function(){
   function closemenu(){
       section.style.right = "-200px";
   }
+  */
 
+  function toggleMenu() {
+    var section = document.querySelector('.section');
+    var logoNavOpen = document.getElementById('logoNavOpen');
+    var logoNavClose = document.getElementById('logoNavClose');
+  
+    if (section.style.right === '0px' || section.style.right === '') {
+      section.style.right = '-200px';
+      section.style.display = 'none';
+      logoNavOpen.style.display = 'block';
+      logoNavClose.style.display = 'none';
+    } else {
+      section.style.right = '0';
+      section.style.display = 'flex';
+      logoNavOpen.style.display = 'none';
+      logoNavClose.style.display = 'block';
+    }
+  }  
 
   
