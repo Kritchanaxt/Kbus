@@ -28,12 +28,14 @@
     <!---------------- Page 1 ----------------->
     <div id="header">
         <div class="container">
-            <nav id="navbar" class="transparent">
-            <dis class="navTop">
-                <img src="PSVG/Logoblue.svg" class="logo" >
-                <i class="fas fa-bars" id="logoNavOpen" onclick="openmenu()"></i>
-                <i class="fas fa-times" id="logoNavClose" onclick="closemenu()"></i>
-            </dis>
+            <nav id="navbar">
+               <div class="navTop">
+                   <img src="PSVG/Logoblue.svg" class="logo" >
+                   <div class="menu-toggle">
+                      <i class="fas fa-bars" id="logoNavOpen" onclick="toggleMenu()"></i>
+                      <i class="fas fa-times" id="logoNavClose" onclick="toggleMenu()"></i>
+                   </div>
+               </div>
                 <div class="section"> 
                     <a class="nav-link" href="#">3D VIEW</a>
                     <a class="nav-link" href="#">Contact Us</a>
