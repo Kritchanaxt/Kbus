@@ -173,8 +173,13 @@
         align-items: center;
         z-index: -1;
         position: absolute;
-        left: 0;
+        left: 25%;
+        justify-content: center;
         /*margin-right: 40px;*/
-
+        background-color: white;
+        height: 200px;
+        width: 300px;
+        border-radius: 18px;
+        border: 1px solid black;
     }
 }
