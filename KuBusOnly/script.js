@@ -31,7 +31,7 @@ $(document).ready(function(){
   // ผูกฟังก์ชัน handleScroll กับเหตุการณ์การเลื่อน
 
 
-  var  = document.getElementById("section");
+  var slide = document.getElementById("section");
 
     function openmenu(){
         section.style.right = "0";
@@ -39,3 +39,5 @@ $(document).ready(function(){
     function closemenu(){
         section.style.right = "-200px";
     }
+
+    document.getElementById('') = slide;
