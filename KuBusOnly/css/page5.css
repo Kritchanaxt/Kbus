@@ -55,6 +55,7 @@
 }
 
 .playapp{
+    cursor: pointer;
     color: white;
     display: flex;
     flex-direction: row;
@@ -83,6 +84,7 @@
 }
 
 .appleapp {
+    cursor: pointer;
     color: white;
     display: flex;
     flex-direction: row;

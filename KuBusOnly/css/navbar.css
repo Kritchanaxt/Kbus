@@ -31,6 +31,9 @@ nav {
     z-index: 100;
     animation: slideindown 3s ease-in-out 1s forwards;
 }
+#logoNav{
+    display: none;
+}
 .transparent {
     transition: background-color 0.5s ease; 
 }
@@ -42,7 +45,7 @@ nav {
     text-decoration: none;
     font-size: 26px;
     color: rgba(2, 2, 115, 0.80);
-    margin-left: 40px;    
+    margin-left: 40px;  
 }
 .language-section  {
     display: inline-block;
@@ -121,4 +124,40 @@ nav {
     display: block;
     padding: 20px, 10px;
     border-radius: 15px;
+}
+@media only screen and (max-width: 600px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.36);
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 100px;
+    }
+    .navTop{
+        display: flex;
+        align-items: center;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    #logoNavOpen{
+        display: flex;
+        position: absolute;
+        right: 1rem;
+    }
+    #logoNavClose{
+        display: none;
+        position: absolute;
+        right: 1rem;
+    }
+    .section{
+        display: none;
+        flex-direction: column;
+        right:0;
+        /*margin-right: 40px;*/
+
+    }
 }
