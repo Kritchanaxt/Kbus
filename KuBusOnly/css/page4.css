@@ -1,0 +1,69 @@
+/*------------- Page 4 !! ----------------*/
+
+#Page4 {
+    padding:200px 0;
+    width: 100%;
+    height: 1060px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(180deg, #0AD19F 0%, #6E7CF1 100%);
+}
+
+.station-bus {
+    width: 950px;
+    height: 570px;
+    margin-top: 5rem;
+    margin-left: 30rem;
+}
+
+.text-operator {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    margin-left: -45rem;
+    margin-top: -10rem;
+}
+
+.text-operator h1 {
+    color: #fff;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10rem;
+    margin-top: -30rem;
+}
+
+.text-operator h2 {
+    color: #FFF;
+    font-size: 36px;
+    margin-left: 46rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.button-join {
+    display: flex;
+    padding: 25px 25px;
+    margin: 5px 50px;
+    border-radius: 36px;
+    background: #FF3535;
+    box-shadow: 0px 5px 10px 0px #A30000;
+    cursor: pointer;
+    margin-top: 5rem;
+    margin-right: 70rem;
+} 
+
+.button-join a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center; 
+}
+
+.button-join:hover {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+    background: linear-gradient(180deg, #A30000 0%, #FF3535 52.08%);
+    box-shadow: 0px 5px 10px 0px #A30000;
+}

@@ -1,0 +1,91 @@
+/*-------------------- Page1 !----------------------*/
+
+.header-text {
+    margin-top: 25%;
+    font-size: 30px;
+    animation: slideinleft 3s ease-in-out 1s forwards;
+}
+
+.header-text h1 {
+    margin-top: 40px;
+    font-size: 45px;
+    color: rgba(2, 2, 115, 0.80);
+}
+
+.header-text h4 {
+    color: rgba(2, 2, 115, 0.60);
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.Logo {
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+}
+
+.Logo a {
+    color: rgba(2, 2, 115, 0.80);
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.ios {
+    margin: 5px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color:white;
+    display: flex;
+    padding: 15px 25px;
+    box-shadow: 0px 10px 20px 0px rgba(10, 209, 159, 0.80);
+}
+
+.ios img {
+    width: 45px;
+    height: 45px;
+    margin-top: -5px;
+    display: block;
+}
+
+.android {
+    margin: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color:white;
+    padding: 15px 25px;
+    display: flex;
+    box-shadow: 0px 10px 20px 0px rgba(10, 209, 159, 0.80);
+}
+
+.android img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: 10px; 
+}
+
+.ios:hover {
+    box-shadow: 0px 15px 30px 0px rgba(10, 209, 159, 0.80);
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+
+.android:hover {
+    box-shadow: 0px 15px 30px 0px rgba(10, 209, 159, 0.80);
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+
+.bus-1 img {
+    width: 980px;
+    height: 520px;
+    margin-top: -26rem;
+    margin-left: 20rem;
+}
+
+.bus-1:hover {
+    transform: translateY(-20px);
+}

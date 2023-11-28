@@ -31,20 +31,4 @@ $(document).ready(function(){
   // ผูกฟังก์ชัน handleScroll กับเหตุการณ์การเลื่อน
 
 
-  var lastClickTime = 0;
-
-  document.querySelector('.language-section').addEventListener('click', function() {
-    var currentTime = new Date().getTime();
-
-    if (currentTime - lastClickTime > 5000) { // 5000 มีค่าเท่ากับ 5 วินาที
-      // ทำสิ่งที่คุณต้องการทำเมื่อคลิก
-      console.log("Button clicked!");
-
-      // อัปเดตเวลาล่าสุดที่คลิก
-      lastClickTime = currentTime;
-
-      // ทำอื่นๆ ที่คุณต้องการทำ
-    } else {
-      console.log("Please wait before clicking again.");
-    }
-  });
+  
