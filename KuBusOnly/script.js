@@ -1,47 +1,50 @@
-// Dropdown!!
+
+//--------------------- Dropdown --------------------------//
 $(document).ready(function(){
-    // เมื่อคลิกที่ dropdown-toggle ใน languageSection
+
+    // When the dropdown-toggle inside languageSection is clicked
     $('.language-section .dropdown-toggle').click(function(){
-        // สลับการแสดง/ซ่อน dropdown-menu
+
+        // Toggle the display of the dropdown-menu
         $('.language-section .dropdown-menu').toggle();
     });
-    // เมื่อคลิกที่องค์ประกอบ a1 ภายใน dropdown-menu ของ languageSection
+
+    // When an element with class 'a1' inside the dropdown-menu of languageSection is clicked
     $('.language-section .dropdown-menu a1').click(function(){
-        // ดึงค่า attribute 'language' จากองค์ประกอบ a1 ที่ถูกคลิก
+
+        // Get the 'language' attribute value from the clicked element
         var selectedLanguage = $(this).attr('language');
         console.log('selected language:', selectedLanguage);
     });
-  });
-
-  // Navbar transparent!!
-  var nav = document.getElementById("navbar"); 
-  // รับอิลิเมนต์ nav
-  var sticky = nav.offsetTop; 
-  // รับตำแหน่งออฟเซตของ nav
-  function handleScroll() {
-      if (window.pageYOffset > sticky) {
-          nav.classList.add("solid");
-      } else {
-          nav.classList.remove("solid");
-      }
-  }
-  
-  // ฟังก์ชันเพื่อเพิ่มหรือลบคลาส "solid" ขึ้นอยู่กับตำแหน่งการเลื่อน
-  window.addEventListener("scroll", handleScroll);
-  // ผูกฟังก์ชัน handleScroll กับเหตุการณ์การเลื่อน
+});
 
 
+//--------------------- Navbar --------------------------//
+// Get the element with the id "navbar" and store it in the variable 'nav'
+var nav = document.getElementById("navbar");
 
-  /*
-  var section = document.getElementById("section");
+// Get the offsetTop (vertical distance from the top of the offsetParent node) of the navbar
+var sticky = nav.offsetTop;
 
-  function openmenu(){
-      section.style.right = "0";
-  }
-  function closemenu(){
-      section.style.right = "-200px";
-  }
-  */
+// Function to handle the scroll event
+function handleScroll() {
+
+    // Check if the vertical scroll position is greater than the offsetTop of the navbar
+    if (window.pageYOffset > sticky) {
+
+        // If true, add the "solid" class to the navbar
+        nav.classList.add("solid");
+    } else {
+
+        // If false, remove the "solid" class from the navbar
+        nav.classList.remove("solid");
+    }
+}
+
+// Attach the handleScroll function to the "scroll" event on the window
+window.addEventListener("scroll", handleScroll);
+
+//------------------------------------------------//
 
   function toggleMenu() {
     var section = document.querySelector('.section');
@@ -61,4 +64,3 @@ $(document).ready(function(){
     }
   }  
 
-  

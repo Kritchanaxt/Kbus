@@ -154,12 +154,13 @@
     flex-direction: column;
     justify-content: center;
     text-align: right;
+    margin-top: -80px;
 }
 .botcontact{
     color: white;
     text-decoration: none;
-    margin-bottom: 40px;
     font-size: 25px;
+    margin: 50px 0px;
 }
 
 .botlogo{

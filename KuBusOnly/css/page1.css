@@ -3,6 +3,7 @@
 .header-text {
     margin-top: 25%;
     font-size: 30px;
+    position: relative;
     animation: slideinleft 3s ease-in-out 1s forwards;
 }
 
@@ -85,11 +86,6 @@
     height: 520px;
     margin-top: -26rem;
     margin-left: 23rem;
-    
-}
-
-.bus-1:hover {
-    transform: translateY(-20px);
 }
 
 /* Responsive */

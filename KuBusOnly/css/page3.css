@@ -15,6 +15,7 @@
     width: 1181px;
     height: 983px;
     margin-top: -35rem;
+    animation: slideinleft 5s ease-in-out 10s forwards;
 }
 
 .text-3Dview {
