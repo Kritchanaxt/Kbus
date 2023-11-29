@@ -154,6 +154,7 @@
     #navbar .fas{
         display: block;
         font-size: 25px;
+        color: black;
     }
     #logoNavOpen{
         display: flex;
