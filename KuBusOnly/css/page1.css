@@ -88,6 +88,10 @@
     margin-left: 23rem;
 }
 
+.bus-1:hover {
+    transform: translateY(-20px);
+}
+
 /* Responsive */
 @media screen and (max-width:600px) {
     .container{
