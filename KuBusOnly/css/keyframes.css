@@ -67,3 +67,13 @@
           transform: scale(1); /* Reset the scale to normal */
       }
     }
+
+    @keyframes grow {
+      0% {
+        font-size: 0;
+      }
+      100% {
+        font-size: 40px;
+      }
+    }
+    

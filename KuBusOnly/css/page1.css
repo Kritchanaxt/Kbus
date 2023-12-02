@@ -89,7 +89,7 @@
 }
 
 .bus-1:hover {
-    transform: translateY(-20px);
+    animation: bounce 2s infinite;
 }
 
 /* Responsive */

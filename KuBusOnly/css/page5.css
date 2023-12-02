@@ -194,19 +194,19 @@
 }
 
 .facebook:hover {
-    animation: bounce 2s infinite;
+    animation: bounce 1.5s infinite;
 }
 
 .instagram:hover {
-    animation: bounce 2s infinite;
+    animation: bounce 1.5s infinite;
 }
 
 .twitter:hover {
-    animation: bounce 2s infinite;
+    animation: bounce 1.5s infinite;
 }
 
 .line:hover {
-    animation: bounce 2s infinite;
+    animation: bounce 1.5s infinite;
 }
 
 

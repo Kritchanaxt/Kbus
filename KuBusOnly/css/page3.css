@@ -9,48 +9,44 @@
     justify-content: space-between;
     background: linear-gradient(180deg, #0AD19F, #34E39F, #01FF98, #6FFBA0, #01FF3900);
 }
+
 .bus-2 {
     display: flex;
     width: 1181px;
-    max-width: 1181px;
     height: 983px;
     margin-top: -35rem;
-    position: relative;
-    animation: slideinleft 5s ease-in-out 10s forwards;
 }
 
 .text-3Dview {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*margin-right: 80px;*/
-    margin-left: 21%;
+    margin-right: 80px;
 }
 
 .sub-title3D  {
     color:rgba(2, 2, 115, 0.8);
-    font-size: 3rem;
+    font-size: 64px;
     margin-left: -40rem;
     margin-top: -8rem;
 }
 
-h3.text-explain1 {
+.text-explain1 {
     color: rgba(2, 2, 115, 0.6);
     margin-top: 3rem;
     margin-left: -30rem;
-    font-size: 1.50rem;
+    font-size: 32px;
 }
 
-h3.text-explain2 {
+.text-explain2 {
     color: rgba(2, 2, 115, 0.6);
     margin-top: 3rem;
     margin-left: -30rem;
-    font-size: 1.50rem;
+    font-size: 32px;
 }
 
 .button-open3D {
     margin-top: 50px;
-    padding: 0 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,29 +54,26 @@ h3.text-explain2 {
 }
 
 .button-open3D a {
-    font-size: 1rem;
+    font-size: 30px;
     text-decoration: none;
 }
 
 .text-open {
-    display: flex;
     color:rgba(2, 2, 115, 0.8);
     text-decoration: none;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 15px 65px;
+    padding: 20px 30px;
     border-radius: 45px;
     border: 2px solid #0AD19F;
     background: rgba(1, 255, 57, 0.02);
-    box-shadow: 0px 0px 10px 0px #01FF98;
-    flex-direction: row;
+    box-shadow: 0px 0px 10px 0px #01FF98;  
 }
 
 .text-open i {
     margin: 5px 5px;
-    font-size: 1rem;
+    font-size: 22px;
     transform: translateY(-4px);
-    margin-top: 15%;
 }
 
 .text-open:hover {
