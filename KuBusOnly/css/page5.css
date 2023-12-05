@@ -31,6 +31,16 @@
     background: linear-gradient(180deg, rgba(5, 0, 255, 0.9), #6E7CF1 100%);
     box-shadow: 0px 5px 10px rgba(5, 0, 255, 0.9);
 }
+@media only screen and (max-width:600px) {
+    #bdfive{
+        height: 1000px;
+    }
+}
+@media only screen and (max-width:1440px) {
+    #bdfive{
+        height: 1000px;
+    }
+}
 
 /*Bottom bar*/
 #bdbottom{
@@ -211,7 +221,7 @@
 @media only screen and (max-width: 600px){
     /*bottom bar*/
     #bdbottom{
-        height: 900px;
+        height: 1000px;
         display: flex;
         flex-direction: column;
     }
