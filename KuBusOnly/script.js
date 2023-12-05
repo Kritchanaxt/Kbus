@@ -31,18 +31,6 @@ $(document).ready(function(){
   // ผูกฟังก์ชัน handleScroll กับเหตุการณ์การเลื่อน
 
 
-
-  /*
-  var section = document.getElementById("section");
-
-  function openmenu(){
-      section.style.right = "0";
-  }
-  function closemenu(){
-      section.style.right = "-200px";
-  }
-  */
-
   function toggleMenu() {
     var section = document.querySelector('.section');
     var logoNavOpen = document.getElementById('logoNavOpen');
@@ -60,5 +48,7 @@ $(document).ready(function(){
       logoNavClose.style.display = 'block';
     }
   }  
+
+
 
   
