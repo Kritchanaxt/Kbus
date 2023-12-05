@@ -208,7 +208,62 @@
     animation: bounce 2s infinite;
 }
 
-
+@media only screen and (max-width: 600px){
+    /*bottom bar*/
+    #bdbottom{
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+    /*first bar*/
+    .botfirst{
+        display: flex;
+        flex-direction: column
+    }
+    .logoapp{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .playapp{
+        margin: 5px 0;
+    }
+    /*Bar two*/
+    .bottwo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .bothome{
+        font-size: 15px;
+        margin: 0;
+        
+    }
+    .botsup{
+        font-size: 15px;
+        margin: 0;
+    }
+    /*Bar three*/
+    .botthree{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .botjoin{
+        font-size: 15px;
+        margin: 0;
+    }
+    .botfqa{
+        font-size: 15px;
+        margin: 0;
+    }
+    /*Bar four*/
+    .botfour{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+}
 
 
 
