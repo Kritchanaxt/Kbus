@@ -86,37 +86,37 @@
 
     .bus-2 {
         display: flex;
-        width: 650px;
-        height: 550px;
-        margin-top: -30rem;
+        width: 500px;
+        height: 450px;
+        margin-top: -20rem;
     }
 
     .text-3Dview {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: -21rem;
-        margin-top: 18rem;
+        margin-right: -22rem;
+        margin-top: 20rem;
     }
 
     .sub-title3D  {
         color:rgba(2, 2, 115, 0.8);
-        font-size: 32px;
-        margin-left: -40rem;
-        margin-top: -8rem;
+        font-size: 29px;
+        margin-left: -32rem;
+        margin-top: -50rem;
     }
 
     .text-explain1 {
         color: rgba(2, 2, 115, 0.6);
         margin-top: 2rem;
-        margin-left: -40rem;
+        margin-left: -28.5rem;
         font-size: 15px;
     }
 
     .text-explain2 {
         color: rgba(2, 2, 115, 0.6);
         margin-top: 2rem;
-        margin-left: -40rem;
+        margin-left: -28.5rem;
         font-size: 15px;
     }
     
@@ -125,7 +125,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        transform: translateX(-38rem);
+        transform: translateX(-27rem);
     }
     
     .button-open3D a {
