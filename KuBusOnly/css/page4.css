@@ -17,7 +17,7 @@
     margin-left: 30rem;
 }
 
-.text-operator {
+.operator {
     justify-content: space-around;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
     margin-top: -10rem;
 }
 
-.text-operator h1 {
+.sub-title-operator {
     color: #fff;
     font-size: 64px;
     display: flex;
@@ -34,7 +34,7 @@
     margin-top: -30rem;
 }
 
-.text-operator h2 {
+.text {
     color: #FFF;
     font-size: 36px;
     margin-left: 46rem;
@@ -43,41 +43,53 @@
 }
 
 .button-join {
+    margin-top: 50px;
     display: flex;
-    padding: 25px 25px;
-    margin: 5px 50px;
-    border-radius: 36px;
-    background: #FF3535;
-    box-shadow: 0px 5px 10px 0px #A30000;
-    cursor: pointer;
-    margin-top: 5rem;
-    margin-right: 70rem;
-} 
-
-.button-join a {
-    display: flex;
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-    text-align: center; 
+    flex-direction: row;
+    align-items: center;
+    /*transform: translateX(-25rem);*/
 }
 
-.button-join:hover {
+.button-join a {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.text-join {
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 28px;
+    border-radius: 36px;
+    background: #FF3535;
+    box-shadow: 0px 5px 10px 0px #A30000; 
+}
+
+.text-join:hover {
     filter: brightness(1.5);
     transform: scale(1.1);
     background: linear-gradient(180deg, #A30000 0%, #FF3535 52.08%);
     box-shadow: 0px 5px 10px 0px #360e0e;
 }
 
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 1440px){
+    #Page4 {
+        display: flex;
+        flex-direction: row;
+        height: 1200px;
+    }
+
     .station-bus {
         width: 550px;
         height: 450px;
-        margin-top: 20rem;
-        margin-left: 60rem;
+        margin-top: 25rem;
+        margin-left: -2rem;
+        margin-bottom: -6rem;
     }
 
-    .text-operator {
+    .operator {
         justify-content: space-around;
         display: flex;
         flex-direction: column;
@@ -85,39 +97,26 @@
         margin-top: -30rem;
     }
 
-    .text-operator h1 {
+    .sub-title-operator {
         color: #fff;
         font-size: 52px;
         display: flex;
         justify-content: center;
         margin-right: -20rem;
-        margin-top: -35rem;
+        margin-top: -30rem;
     }
-    
-    .text-operator h2 {
+
+    .text {
         color: #FFF;
         font-size: 28px;
-        margin-left: 85rem;
-        margin-top: -10rem;
         display: flex;
+        margin-top: -5rem;
+        margin-left: 23.5rem;
     }
-    
 
     .button-join {
-        margin-top: -4rem;
-        padding: 20px 100px;
-        border-radius: 36px;
-        background: #FF3535;
-        box-shadow: 0px 5px 10px 0px #A30000; 
-        margin-left: 70rem;
-        cursor: pointer;
-        display: flex;
+        margin-top: 1rem;
+        margin-left: 8rem;
     }
     
-    .button-join a {
-        font-size: 15px;
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-    }
 }

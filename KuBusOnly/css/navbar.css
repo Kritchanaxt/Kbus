@@ -183,15 +183,16 @@
         display: block;
     }
     
-    .section{
+    .section {
         display: flex; 
         flex-direction: column;
+        font-size: 26px;
         top: 150%;
         align-items: center;
         z-index: -1;
         position: absolute;
         justify-content: center;
-        background-color: white;
+        background-color: #fff;
         left: 15%;     
         height:700px;
         width: 400px;
@@ -202,6 +203,7 @@
 
     .nav-link {
         display: flex;
+        font-size: 26px;
         margin: 40px 40px;
         color: rgba(2, 2, 115, 0.80);
     }
