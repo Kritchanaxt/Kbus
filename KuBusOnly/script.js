@@ -64,3 +64,40 @@ window.addEventListener("scroll", handleScroll);
     }
   }  
 
+//-------------------- Auto-font ---------------------//
+
+  var typed = new Typed(".auto-type", {
+    strings: ["Reliable","Convenience"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+})
+
+//-------------------- Move the bus based on scroll position ---------------------//
+
+$(document).ready(function () {
+  // Check scroll position when the user scrolls
+  $(window).scroll(function () {
+      moveBusOnScroll();
+  });
+
+  // Function to move the bus based on scroll position
+  function moveBusOnScroll() {
+      // Get the offset of Page3 from the top of the document
+      var page3Offset = $('#Page3').offset().top;
+      // Get the current scroll position
+      var windowScroll = $(window).scrollTop();
+      // Get the height of the window
+      var windowHeight = $(window).height();
+
+      // Adjust these values based on your layout and requirements
+      if (windowScroll + windowHeight > page3Offset + 100) {
+          // User has scrolled to Page 3, move the bus to the right
+          $('#Page3 .bus-2').css('transform', 'translateX(0)');
+      } else {
+          // User has not scrolled to Page 3, move the bus off-screen to the left
+          $('#Page3 .bus-2').css('transform', 'translateX(-100%)');
+      }
+  }
+});
+

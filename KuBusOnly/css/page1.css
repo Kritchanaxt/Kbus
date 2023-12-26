@@ -1,16 +1,27 @@
 /*-------------------- Page1 !----------------------*/
 
 .header-text {
-    margin-top: 25%;
+    margin-top: 23%;
     font-size: 30px;
     position: relative;
+}
+.components-1 {
     animation: slideinleft 3s ease-in-out 1s forwards;
+}
+
+.components-2 {
+    animation: slideinright 3s ease-in-out 1s forwards;
 }
 
 .header-text h1 {
     margin-top: 40px;
     font-size: 45px;
     color: rgba(2, 2, 115, 0.80);
+}
+
+.header-text h1 span 
+{
+    color:  #fff;
 }
 
 .header-text h4 {
@@ -81,15 +92,11 @@
 }
 
 .bus-1 img {
-    width: 980px;
+    width: 1050px;
     max-width: 100%;
-    height: 520px;
-    margin-top: -26rem;
-    margin-left: 23rem;
-}
-
-.bus-1:hover {
-    animation: bounce 2s infinite;
+    height: 1050px;
+    margin-top: -44rem;
+    margin-left: 25rem;
 }
 
 /* Responsive */

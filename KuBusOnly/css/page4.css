@@ -15,6 +15,11 @@
     height: 570px;
     margin-top: 5rem;
     margin-left: 30rem;
+    filter: brightness(1.1);
+}
+
+.station-bus:hover {
+    animation: beat 1s infinite;
 }
 
 .text-operator {

@@ -18,6 +18,16 @@
     }
   }
 
+@keyframes slideinright {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
 @keyframes beat {
     0% {
       transform: scale(1);
@@ -55,18 +65,6 @@
       }
     }
 
-    @keyframes burstAndMoveRight {
-      0% {
-          transform: scale(0); /* Initial burst effect: scaled down to 0 */
-      }
-      50% {
-          transform: scale(1.5); /* Burst effect: scaled up to 1.5 times its size */
-      }
-      100% {
-          left: 100%; /* Move to the right edge */
-          transform: scale(1); /* Reset the scale to normal */
-      }
-    }
 
     @keyframes grow {
       0% {

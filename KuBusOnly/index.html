@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUBUS</title>
+    <title>KUBUS SRC</title>
+    <link rel="website icon" type="png" href="#">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
@@ -35,7 +37,7 @@
                    <div class="menu-toggle">
                       <i class="fas fa-bars" id="logoNavOpen" onclick="toggleMenu()"></i>
                       <i class="fas fa-times" id="logoNavClose" onclick="toggleMenu()" style="display: none;"></i>
-               </div>
+                    </div>
                </div>
                 <div class="section"> 
                     <a class="nav-link" href="#">3D VIEW</a>
@@ -52,21 +54,26 @@
                 </div>
             </nav>
             <div class="header-text">
-                <img src="PSVG/Rectangle 46.svg" alt="LogoApp" id="imgLogoApp" width="152px">
-                <h1>Making Transit Reliable</h1>
-                <h4> KU BUS  Real-time Transit App</h4>
-                <div class="Logo">
-                    <div class="ios">
-                        <img src="PSVG/apple.svg" alt="apple-logo" >
-                        <a href="#">iOS</a>
-                    </div>
-                    <div class="android">
-                        <img src="PSVG/google-play.svg" alt="google-play.logo">
-                        <a href="#">Android</a>
+                <div class="components-1">
+                    <img src="PSVG/Rectangle 46.svg" alt="LogoApp" id="imgLogoApp" width="152px">
+                    <h1>Making Transit <span class="auto-type"></span><br> 
+                        <h4> KU BUS  Real-time Transit App</h4>
+                    <h1>
+                    <div class="Logo">
+                        <div class="ios">
+                            <img src="PSVG/apple.svg" alt="apple-logo" >
+                            <a href="#">iOS</a>
+                        </div>
+                        <div class="android">
+                            <img src="PSVG/google-play.svg" alt="google-play.logo">
+                            <a href="#">Android</a>
+                        </div>
                     </div>
                 </div>
-                <div class="bus-1">
-                    <img src="PSVG/busone.svg" alt="bus1">
+                <div class="components-2">
+                    <div class="bus-1">
+                        <img src="PSVG/busone.svg" alt="bus1">
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,7 +108,7 @@
 
     <!------------- Page3 ------------->
 
-     <div id="Page3">
+     <div id="Page3" class="page-enter">
         <img class="bus-2" src="PSVG/bustwo.svg" alt="Bus">
         <div class="text-3Dview">
             <h1 class="sub-title3D">
@@ -110,7 +117,7 @@
             <h3 class="text-explain1">If you want to see the bus in  <br> style 3D animated video, </br>press  the “ Open 3D ” button.</h3>
             <h3 class="text-explain2">You can enjoywatching <br>animations and details </br>of this 3D model.</h3>
             <div class="button-open3D">
-                <a href="#" class="text-open">
+                <a href="video/bus3d.mp4" class="text-open">
                     <i class="fa-regular fa-arrow-up-right-from-square"></i>
                     Open 3D
                 </a>
@@ -217,5 +224,6 @@
 </body>
 </html>
     <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>

@@ -35,7 +35,7 @@
 /*Bottom bar*/
 #bdbottom{
     background: #6E7CF1;
-    height: 332px;
+    height: 322px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

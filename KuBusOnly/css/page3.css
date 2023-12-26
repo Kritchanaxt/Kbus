@@ -15,13 +15,23 @@
     width: 1181px;
     height: 983px;
     margin-top: -35rem;
+    transition: transform 0.5s ease;
+}
+
+page-enter .bus-2 {
+    transition: transform 10s ease;
+    transform: translateX(0);
+}
+
+.page-leave .bus-2 {
+    transition: transform 10s ease;
+    transform: translateX(-100%);
 }
 
 .text-3Dview {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 80px;
 }
 
 .sub-title3D  {
