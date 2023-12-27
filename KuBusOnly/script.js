@@ -44,7 +44,7 @@ function handleScroll() {
 // Attach the handleScroll function to the "scroll" event on the window
 window.addEventListener("scroll", handleScroll);
 
-//------------------------------------------------//
+//--------------------- onclick ---------------------------//
 
   function toggleMenu() {
     var section = document.querySelector('.section');
@@ -100,4 +100,3 @@ $(document).ready(function () {
       }
   }
 });
-
