@@ -16,7 +16,7 @@
     font-size: 32px;
     margin-bottom: 80px;
 }
-.fivebottom{
+.fivebottom a{
     background: rgba(5, 0, 255, 0.9);
     opacity: 0.8;
     box-shadow: 0px 5px 10px #6E7CF1;
@@ -25,8 +25,9 @@
     color: white;
     font-size: 24px;
     cursor: pointer;
+    text-decoration: none;
 }
-.fivebottom:hover{
+.fivebottom :hover{
     transform: scale(1.1);
     background: linear-gradient(180deg, rgba(5, 0, 255, 0.9), #6E7CF1 100%);
     box-shadow: 0px 5px 10px rgba(5, 0, 255, 0.9);
@@ -169,25 +170,25 @@
     cursor: pointer;
 }
 
-.facebook {
+.facebook a {
     color: #FFFFFF;
     font-size: 45px;
     margin: -2px 5px;
 }
 
-.instagram {
+.instagram a {
     color: #FFFFFF;
     font-size: 45px;
     margin: -2px 5px;
 }
 
-.twitter {
+.twitter a {
     color: #FFFFFF;
     font-size: 45px;
     margin: -2px 5px;
 }
 
-.line {
+.line a {
     color: #FFFFFF;
     font-size: 40px;
     margin: 0px 5px;

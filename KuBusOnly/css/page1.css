@@ -97,6 +97,11 @@
     height: 1050px;
     margin-top: -44rem;
     margin-left: 25rem;
+    cursor: pointer;
+}
+
+.bus-1 img:hover {
+    animation: shake 1s ease-in-out infinite;
 }
 
 /* Responsive */
@@ -138,6 +143,5 @@
         align-items: center;
         text-align: center;
         max-width: 500px;
-        
     }
 }
