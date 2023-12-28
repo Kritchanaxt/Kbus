@@ -228,6 +228,9 @@
         justify-content: flex-start;
     }
     /*first bar*/
+    .fivetop {
+        font-size: 28px;
+    }
     .botfirst{
         display: flex;
         flex-direction: column;

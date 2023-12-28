@@ -193,16 +193,16 @@
         position: absolute;
         justify-content: center;
         left: 15%;     
-
         height:700px;
         width: 400px;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
-        border-radius: 48px;
-        border: 0px solid #FFF;
+        border-radius: 49px;
+        background: #FFF;
         background: linear-gradient(180deg, #080862 0%, #0AD19F 100%);
     }
+    
 
-    .nav-link {
+    .nav-link { 
         display: flex;
         font-size: 26px;
         margin: 40px 40px;
