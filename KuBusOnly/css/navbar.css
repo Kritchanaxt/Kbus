@@ -139,6 +139,11 @@
     border-radius: 15px;
 }
 
+.Element {
+    visibility: hidden;
+    display: none;
+}
+
 
 @media only screen and (max-width: 940px){
 
@@ -197,16 +202,21 @@
         width: 400px;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
         border-radius: 49px;
-        background: #FFF;
         background: linear-gradient(180deg, #080862 0%, #0AD19F 100%);
     }
-    
 
+    .section a {
+        color: #fff;
+    }
+    
+    .section p {
+        color: #fff;
+    }
+    
     .nav-link { 
         display: flex;
         font-size: 26px;
         margin: 40px 40px;
-        color: rgba(2, 2, 115, 0.80);
     }
 
     .language-section {
@@ -216,5 +226,13 @@
     .dropdown-menu {
         margin: -30px 18px;
     }
-    
+
+    .dropdown-menu a {
+        color: rgba(2, 2, 115, 0.80);
+    }
+
+    .Element {
+        visibility: visible;
+        display: block;
+    }
 }
