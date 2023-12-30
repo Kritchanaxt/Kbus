@@ -155,7 +155,7 @@
     #navbar .fas{
         display: block;
         font-size: 30px;
-        color: ;
+        color: black;
     }
 
     .navTop{
@@ -192,11 +192,9 @@
         left: 25%;
         justify-content: center;
         /*margin-right: 40px;*/
-        background-color: white;
+        background-image: url('PSVG/dropdown.svg');
         height: 600px;
         width: 300px;
-        border-radius: 30px;
-        border: 5px solid #01FF98;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
     }
 }
