@@ -144,6 +144,11 @@
     display: none;
 }
 
+.Squares {
+    visibility: hidden;
+    display: none;
+}
+
 
 @media only screen and (max-width: 940px){
 
@@ -212,7 +217,7 @@
     .section p {
         color: #fff;
     }
-    
+
     .nav-link { 
         display: flex;
         font-size: 26px;
@@ -229,10 +234,5 @@
 
     .dropdown-menu a {
         color: rgba(2, 2, 115, 0.80);
-    }
-
-    .Element {
-        visibility: visible;
-        display: block;
     }
 }
