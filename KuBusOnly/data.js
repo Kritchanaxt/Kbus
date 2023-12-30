@@ -1,3 +1,20 @@
+//JavaScript section
+const langSec = document.querySelector('.language-section');
+const buttons = document.querySelectorAll('a');
+const textNavlink1 = document.querySelector('.nav-link1');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        langSec.querySelector('.active').classList.remove('active');
+        button.classList.add('active');
+
+        const attr = button.getAttribute('language');
+
+        textNavlink1.textContent = data[attr].nav-link1;
+    })
+})
+
+
 const data = {
     "eng" : 
     {
@@ -70,24 +87,24 @@ const data = {
 
         //Page3
         "sub-title3D": "ดูรถบัสในแบบ 3 มิติ",
-        "text-explain1": "Iหากคุณต้องการดูรถบัสในรูปแบบ  <br> วิดิโอภาพเคลื่อนไหว 3 มิติ , </br>ให้กดปุ่ม “ Open 3D ”.",
-        "text-explain2": "คุณสามารถเพลิดเพลินกับการชม <br>ภาพเคลื่อนไหวและรายละเอียด </br>ของโมเดล 3 มิตินี้ได้.",
+        "text-explain1": "หากคุณต้องการดูรถบัสในรูปแบบ  <br> วิดิโอภาพเคลื่อนไหว 3 มิติ , </br> ให้กดปุ่ม “ Open 3D ”.",
+        "text-explain2": "คุณสามารถเพลิดเพลินกับการชม <br> ภาพเคลื่อนไหวและรายละเอียด </br> ของโมเดล 3 มิตินี้ได้.",
 
         //Page4
         "Text-Station1": "คุณเป็นผู้ใช้บริการรถโดยสาร?",
-        "Text-Station2": "Join the digital transportation   <br> platform of KU BUS <br>to access services broadly <br> and for users to follow their <br> services in real time ",
-        "Text-join": "Join KU BUS Now!",
+        "Text-Station2": "เข้าร่วมแพลตฟอร์มการขนส่งดิจิทัล <br> ของ KU BUS <br> เพื่อเข้าถึงบริการในวงกว้าง <br> และให้ผู้ใช้สามารถติดตาม <br> บริการของตนได้แบบเรียลไทม์",
+        "Text-join": "เข้าร่วม KU BUS ",
 
         //Page5
-        "fivetop": "KU BUS began with a small team of aims to make public transportation. <br> A simple, comfortable, and seamless experience for all, free of charge. <br> Every penny supported will go into the development of <br> KU BUS for a better university experience.",
-        "fivesub": "Support KU BUS",
-        "playtop": "GET IT ON",
-        "appletop": "GET IT ON",
-        "bothome": "Home",
-        "botsup": "Support KU BUS",
-        "botjoin": "Join Our Platform",
-        "botfqa": "FQA",
-        "botcontact": "Contact",
+        "fivetop": "KU BUS เริ่มต้นจากทีมงานเล็กๆ ที่มุ่งสร้างการขนส่งสาธารณะ. <br> ประสบการณ์ที่เรียบง่าย สะดวกสบาย และราบรื่นสำหรับทุกคน โดยไม่เสียค่าใช้จ่าย. <br> เงินทุกสตางค์ที่ได้รับการสนับสนุนจะนำไปสู่การพัฒนา <br> KU BUS เพื่อประสบการณ์มหาวิทยาลัยที่ดียิ่งขึ้น.",
+        "fivesub": "สนับสนุน KU BUS",
+        "playtop": "ดาวห์โหลดได้ที่",
+        "appletop": "ดาวห์โหลดได้ที่",
+        "bothome": "หน้าแรก",
+        "botsup": "สนับสนุน KU BUS",
+        "botjoin": "เข้าร่วมแพลตฟอร์มของเรา",
+        "botfqa": "คำถามที่พบบ่อย",
+        "botcontact": "ติดต่อเรา",
     
     }
 }
