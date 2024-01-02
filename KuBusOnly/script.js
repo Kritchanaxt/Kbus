@@ -35,7 +35,7 @@ $(document).ready(function(){
     var section = document.querySelector('.section');
     var logoNavOpen = document.getElementById('logoNavOpen');
     var logoNavClose = document.getElementById('logoNavClose');
-  
+
     if (section.style.right === '0px' || section.style.right === '') {
       section.style.right = '-200px';
       section.style.display = 'none';
@@ -46,9 +46,7 @@ $(document).ready(function(){
       section.style.display = 'flex';
       logoNavOpen.style.display = 'none';
       logoNavClose.style.display = 'block';
+
+      section.style.alignItems="center"
     }
   }  
-
-
-
-  

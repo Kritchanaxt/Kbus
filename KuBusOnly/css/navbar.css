@@ -133,11 +133,7 @@
     border-bottom-left-radius: 15px;
 }
 
-.language-section:hover .dropdown-menu {
-    display: block;
-    padding: 20px, 10px;
-    border-radius: 15px;
-}
+
 
 .Element {
     visibility: hidden;
@@ -194,7 +190,7 @@
     }
     
     .section {
-        display: flex; 
+        display: none; 
         flex-direction: column;
         font-size: 26px;
         top: 150%;
