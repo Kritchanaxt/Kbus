@@ -10,4 +10,5 @@ body {
     height: 5299px;
     overflow-x: hidden;
     margin: 0;
+    scroll-behavior: smooth;
 }
