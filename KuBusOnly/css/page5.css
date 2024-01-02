@@ -219,6 +219,11 @@
     animation: bounce 2s infinite;
 }
 
+.bothome:hover, .botsup:hover
+, .botjoin:hover , .botfqa:hover{
+    color: #6FFBA0;
+}
+
 @media only screen and (max-width: 600px){
     /*bottom bar*/
     #bdbottom{
@@ -276,8 +281,10 @@
         text-align: left;
         margin: 15px 20px;
     }
+
+    .botlogo a:hover {
+        color: #6FFBA0
+    }
 }
-.bothome:hover, .botsup:hover
-, .botjoin:hover , .botfqa:hover{
-    color: #6FFBA0;
-}
+
+
