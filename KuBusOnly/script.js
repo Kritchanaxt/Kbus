@@ -61,6 +61,8 @@ window.addEventListener("scroll", handleScroll);
       section.style.display = 'flex';
       logoNavOpen.style.display = 'none';
       logoNavClose.style.display = 'block';
+
+      section.style.alignItems = 'center';
     }
   }  
 
