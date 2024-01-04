@@ -224,7 +224,7 @@
     color: #6FFBA0;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 773px){
     /*bottom bar*/
     #bdbottom{
         height: 750px;
