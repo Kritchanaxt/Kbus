@@ -26,9 +26,11 @@
     cursor: pointer;
 }
 .fivebottom:hover{
-    background: linear-gradient(180deg, rgba(5, 0, 255, 0.9), #6E7CF1 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg,  rgba(5, 0, 255, 0.9) 0%, #6E7CF1  100%);
     box-shadow: 0px 5px 10px rgba(5, 0, 255, 0.9);
     transform: scale(1.1);
+    filter: brightness(1.5);
 }
 
 .fivesub {
@@ -204,7 +206,7 @@
 .line a {
     color: #FFFFFF;
     font-size: 40px;
-    margin: 0px 5px;
+    margin: -2px 5px;
 }
 
 .facebook:hover {
@@ -224,15 +226,27 @@
     animation: bounce 1.5s infinite;
 }
 
-.botlogo a:hover {
-    color: #6FFBA0
+.facebook a:hover {
+    color:  rgba(5, 0, 255, 0.9);
 }
 
+.instagram a:hover {
+    color: #FE53BB ;
+}
+
+.twitter a:hover {
+    color:#181818;
+}
+
+.line a:hover{
+    color: #01FF98;
+}
 
 .bothome:hover, 
 .botsup:hover, 
 .botjoin:hover, 
-.botfqa:hover  {
+.botfqa:hover,
+.botcontact:hover  {
     color: #6FFBA0;
 }
 

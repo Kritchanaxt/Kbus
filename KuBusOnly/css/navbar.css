@@ -18,11 +18,11 @@
 .logo {
     width: 180px;
     height: 100px;
-    cursor: pointer;
 }
 
 #logoNav{
     display: none;
+    cursor: pointer;
 }
 /*  Navbar!? */
 #navbar {
@@ -80,6 +80,13 @@
     margin-left: 40px;
 }
 
+.nav-link1:hover {
+    color: #6FFBA0;
+} 
+
+.nav-link2:hover {
+    color: #6FFBA0;
+} 
 /* The dropdown language-section !?  */
 .nav-link.dropdown-toggle {
     color: rgba(2, 2, 115, 0.80);

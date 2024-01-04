@@ -53,20 +53,6 @@
   }
 
 
-    @keyframes loopFade {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-
-
-    
     @keyframes shake {
       0%, 100% {
         transform: translateX(0);
@@ -78,4 +64,53 @@
         transform: translateX(10px);
       }
     }
+
+    @keyframes pulse512 {
+      0% {
+       box-shadow: 0 0 0 0 #8F51EA ;
+      }
+     
+      70% {
+       box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+      }
+     
+      100% {
+       box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+      }
+     }
+
+     @keyframes shine {
+      0% {
+        left: -100px;
+      }
+    
+      60% {
+        left: 100%;
+      }
+    
+      to {
+        left: 100%;
+      }
+    }
+
+    @keyframes loopFade{
+      0% {
+        /* เฝ้ารอตั้งแต่เริ่มต้น */
+        opacity: 0;
+        transform: translateY(0);
+      }
+      50% {
+        /* กลางทางของ animation */
+        opacity: 1;
+        transform: translateY(-5px);
+      }
+      100% {
+        /* สิ้นสุดของ animation */
+        opacity: 0;
+        transform: translateY(0);
+      }
+    }
+    
+
+  
     

@@ -101,7 +101,7 @@
 }
 
 .bus-1 img:hover {
-    animation: shake 1s ease-in-out infinite;
+    animation: shake 5s ease-in-out infinite;
 }
 
 /* Responsive */

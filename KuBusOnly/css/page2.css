@@ -79,4 +79,5 @@ p {
 
 .about-list img:hover {
     animation: beat 1s infinite;
+    filter: brightness(1.1);
 }
