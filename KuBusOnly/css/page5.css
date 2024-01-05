@@ -73,7 +73,33 @@
     border-radius: 20px;
     padding: 5px 15px;
     font-size: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
     filter: brightness(1.5);
+}
+
+.playapp:hover {
+    transform: scale(1.05);
+}
+
+.playapp::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(3, 3, 3, 0.4);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+.playapp:hover::before {
+    transform: translateX(0);
 }
 
 .playlogo {
@@ -90,9 +116,6 @@
     color: #FFFFFF;
 }
 
-.playapp:hover {
-    animation: loopFade 2s ease-in-out infinite;
-}
 
 .appleapp {
     cursor: pointer;
@@ -106,7 +129,32 @@
     border-radius: 20px;
     padding: 5px 15px;
     font-size: 20px;
-    filter: brightness(1.5);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+}
+
+.appleapp:hover {
+    transform: scale(1.05);
+}
+
+.appleapp::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(3, 3, 3, 0.4);
+    transform: translateX(100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+
+.appleapp:hover::before {
+    transform: translateX(0);
 }
 
 .applelogo {
@@ -123,9 +171,7 @@
     color: #FFFFFF;
 }
 
-.appleapp:hover {
-    animation: loopFade 2s ease-in-out infinite;
-}
+
 /*Bar two*/
 .bottwo{
     display: flex;
@@ -250,5 +296,76 @@
     color: #6FFBA0;
 }
 
+@media only screen and (max-width:600px) {
+    #bdfive{
+        height: 1000px;
+    }
+}
+@media only screen and (max-width:1440px) {
+    #bdfive{
+        height: 1000px;
+    }
+}
 
+@media only screen and (max-width: 773px){
+    /*bottom bar*/
+    #bdbottom{
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    /*first bar*/
+    .fivetop {
+        font-size: 28px;
+    }
+    .botfirst{
+        display: flex;
+        flex-direction: column;
+    }
+    .logoapp{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .playapp{
+        margin: 5px 0;
+    }
+    /*Bar two*/
+    .bottwo{
+        display: flex;
+    }
+    .bothome{
+        font-size: 15px;
+        margin: 15px 20px;
+        
+    }
+    .botsup{
+        font-size: 15px;
+        margin: 15px 20px;
+    }
+    /*Bar three*/
+    .botthree{
+        display: flex;
+        flex-direction: column;
+    }
+    .botjoin{
+        font-size: 15px;
+        margin: 15px 20px;
+    }
+    .botfqa{
+        font-size: 15px;
+        margin: 15px 20px;
+    }
+    /*Bar four*/
+    .botfour{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 15px 20px;
+    }
 
+    .botlogo a:hover {
+        color: #6FFBA0
+    }
+}

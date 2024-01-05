@@ -93,25 +93,5 @@
       }
     }
 
-    @keyframes loopFade{
-      0% {
-        /* เฝ้ารอตั้งแต่เริ่มต้น */
-        opacity: 0;
-        transform: translateY(0);
-      }
-      50% {
-        /* กลางทางของ animation */
-        opacity: 1;
-        transform: translateY(-5px);
-      }
-      100% {
-        /* สิ้นสุดของ animation */
-        opacity: 0;
-        transform: translateY(0);
-      }
-    }
-    
-
-
   
     

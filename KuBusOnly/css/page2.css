@@ -80,3 +80,64 @@ p {
 .about-list img:hover {
     animation: beat 1s infinite;
 }
+
+@media screen and (max-width:940px) {
+    #Page2{
+      padding: 100px 0;
+      height: 1900px;
+    }
+    .sub-title{
+     font-size: 2.5rem;
+    }
+    .about-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .Routes img {
+        align-items: center; 
+        width: 380px;
+        height: 484px;
+        margin-top: -60px;
+    }
+    
+    .Routes h2  {
+        margin-top: -100px;
+        font-size: 2rem;
+    }
+    
+    .TrackLive img {
+        align-items: center;
+        width: 374px;
+        height: 374px;
+    }
+    
+    .TrackLive h2 {
+        margin-top: -50px;
+        font-size: 2rem;
+    }
+    
+    .GetDirections img {
+        align-items: center;
+        width: 360px;
+        height: 380px;
+    }
+    
+    .GetDirections h2 {
+        margin-top: -55px;
+        font-size: 2rem;
+    }
+    p {
+        margin-top: 0.5rem;
+        font-size: 1.25rem;
+        color: rgba(3, 3, 77, 0.50);
+    }
+    h4 {
+        margin-top: 2px;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:940px){
+    .sub-title{
+        font-size: 2rem;
+       }
+}
