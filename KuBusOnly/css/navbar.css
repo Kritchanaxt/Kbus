@@ -152,7 +152,6 @@
     #navbar {
         display: flex;
         flex-direction: column;
-        
         justify-content: space-around;
         align-items: center;
         text-align: center;
@@ -161,8 +160,8 @@
 
     #navbar .fas{
         display: block;
-        font-size: 30px;
-        color: black;
+        font-size: 25px;
+        color: #A30000;
     }
 
     .navTop{
@@ -181,27 +180,56 @@
         right: 1rem;
         cursor: pointer;
     }
+
     #logoNavClose{
         display: none;
         position: absolute;
         right: 1rem;
         cursor: pointer;
         margin-top: 8rem;
-        margin: 8rem 9rem;
+        margin: 8rem 6rem;
     }
+
     .section{
-        display: flex; /*none*/
+        display: none; /*none*/
         flex-direction: column;
         top: 150%;
         align-items: center;
         z-index: -1;
         position: absolute;
-        left: 25%;
+        left: 15%;
         justify-content: center;
         /*margin-right: 40px;*/
         background-image: url('PSVG/dropdown.svg');
-        height: 600px;
-        width: 300px;
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
+        height: 700px;
+        width: 400px;
+        font-size: 26px;
     }
+
+    .section a {
+        color: #fff;
+    }
+    
+    .section p {
+        color: #fff;
+    }
+
+    .nav-link { 
+        display: flex;
+        font-size: 26px;
+        margin: 40px 40px;
+    }
+
+    .language-section {
+        color: rgba(2, 2, 115, 0.80);
+    }
+
+    .dropdown-menu {
+        margin: -30px 18px;
+    }
+
+    .dropdown-menu a {
+        color: rgba(2, 2, 115, 0.80);
+    }
+
 }

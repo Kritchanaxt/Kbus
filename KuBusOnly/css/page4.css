@@ -51,7 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 25px;
+    padding: 35px 28px;
     margin: 5px 50px;
     border-radius: 36px;
     background: #FF3535;
@@ -101,3 +101,50 @@
     left: -100px;
     opacity: 0.6;
   }
+
+  @media only screen and (max-width: 1440px){
+    #Page4 {
+        display: flex;
+        flex-direction: row;
+        height: 1200px;
+    }
+
+    .station-bus {
+        width: 550px;
+        height: 450px;
+        margin-top: 25rem;
+        margin-left: -2rem;
+        margin-bottom: -6rem;
+    }
+
+    .text-operator {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        margin-left: -20rem;
+        margin-top: -30rem;
+    }
+
+    .Text-Station1  {
+        color: #fff;
+        font-size: 52px;
+        display: flex;
+        justify-content: center;
+        margin-right: -20rem;
+        margin-top: -30rem;
+    }
+
+    .Text-Station2 {
+        color: #FFF;
+        font-size: 28px;
+        display: flex;
+        margin-top: -5rem;
+        margin-left: 23.5rem;
+    }
+
+    .button-join {
+        margin-top: 1rem;
+        margin-left: 50rem;
+    }
+    
+}

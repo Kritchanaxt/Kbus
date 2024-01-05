@@ -23,7 +23,6 @@
     background: -webkit-linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .header-text h4 {
@@ -164,13 +163,14 @@
 /* Responsive */
 @media screen and (max-width:600px) {
     .container{
-        padding: 0;
+        padding: 30px;
     }
     
     .header-text{
         display: flex;
         flex-direction: column;
         margin-left: 10%;
+        max-width: 500px;
     }
     #imgLogoApp{
         width: 152px;
@@ -200,5 +200,32 @@
         align-items: center;
         text-align: center;
         max-width: 500px;
+        top: 0;
+    }
+}
+@media screen and (max-width:940px){
+    .header-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        max-width: 500px;
+    }
+    .bus-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 35%;
+    }
+    .bus-1 img {
+        width: 500px;
+        align-items: center;
+        text-align: center;
+        max-width: 500px;
+        margin-top: -22rem;
+        margin-right: 3rem;
+    }
+    .header-text h1{
+        font-size: 3rem;
+        position: relative;
     }
 }

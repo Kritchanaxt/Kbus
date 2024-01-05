@@ -69,13 +69,11 @@ page-enter .bus-2 {
 }
 
 .text-open {
-    border: none; 
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
-    background-size: 100% auto;
-    font-family: inherit;
-    font-size: 17px;
-    padding: 0.6em 1.5em;
     padding: 20px 30px;
+    border: none; 
     border-radius: 45px;
     color:rgba(2, 2, 115, 0.8);
     border: 2px solid #0AD19F;
@@ -95,4 +93,37 @@ page-enter .bus-2 {
     -webkit-animation: pulse 2s infinite;
     animation: pulse512 1.5s infinite;
     transform: scale(1.1)
+}
+
+@media only screen and (max-width: 1440px){
+    #Page3{
+        display: flex;
+        flex-direction: row;
+        height: 1200px;
+    }
+    .bus-2{
+        height: 500px;
+        left: 0;
+    }
+    .text-3Dview{
+    top: 2750px;
+    margin: 0;
+    display: flex;
+    left: 20%;
+    right: 20%;
+    }
+
+    .sub-title3D{
+        font-size: 35px;
+    }
+
+    .text-explain1, .text-explain2{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:940px) {
+    .text-3Dview{
+        top: 3600px;
+    }
 }
